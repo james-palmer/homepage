@@ -16,7 +16,6 @@ function getWeatherSyd() {
     fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
-      console.log(data);
       drawWeatherSyd(data);
     })
     .catch(function() {
@@ -31,7 +30,6 @@ function getWeatherSyd() {
     fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
-      console.log(data);
       drawWeatherLon(data);
     })
     .catch(function() {
@@ -46,7 +44,6 @@ function getWeatherSyd() {
     fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
-      console.log(data);
       drawWeatherNYC(data);
     })
     .catch(function() {
@@ -59,7 +56,7 @@ function getWeatherSyd() {
       var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32); 
       document.getElementById('tempSYD').innerHTML = celcius + '&deg;';
       var iconCode = d.weather[0].icon   
-      var iconURL = "http://openweathermap.org/img/w/" + iconCode + ".png";
+      var iconURL = "https://openweathermap.org/img/w/" + iconCode + ".png";
       document.getElementById('weatherIconSYD').src = iconURL
     }
 
@@ -68,7 +65,7 @@ function getWeatherSyd() {
         var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32); 
         document.getElementById('tempLon').innerHTML = celcius + '&deg;';
         var iconCode = d.weather[0].icon   
-        var iconURL = "http://openweathermap.org/img/w/" + iconCode + ".png";
+        var iconURL = "https://openweathermap.org/img/w/" + iconCode + ".png";
         document.getElementById('weatherIconLon').src = iconURL
       }
 
@@ -77,6 +74,6 @@ function getWeatherSyd() {
         var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32); 
         document.getElementById('tempNYC').innerHTML = celcius + '&deg;';
         var iconCode = d.weather[0].icon   
-        var iconURL = "http://openweathermap.org/img/w/" + iconCode + ".png";
+        var iconURL = "https://openweathermap.org/img/w/" + iconCode + ".png";
         document.getElementById('weatherIconNYC').src = iconURL
       }

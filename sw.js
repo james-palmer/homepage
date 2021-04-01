@@ -8,11 +8,10 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-var cacheName = 'bagApp';
+var cacheName = 'homepageApp';
 var filesToCache = [
   '/',
-  '/index.html',
-  '/public/main.css'
+  '/index.html'
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
