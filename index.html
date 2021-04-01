@@ -42,27 +42,48 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   
   <script src="/sw.js"></script>
+  <script src="/scripts.js"></script>
 </head>
  
 <body>  
   <div class="container">
+
+
     <div class="row justify-content-center">
-      <div class="col-6">
+      <div class="col-12">
+        <div class="google">
        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" >
           <input autocomplete="on" class="form-control search" name="q" placeholder="Google" required="required"  type="text">
         </form> 
         <!-- <iframe src="https://duckduckgo.com/search.html?prefill=Search DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:100%;height:40px;" frameborder="0"></iframe> -->
       </div>
     </div>
+    </div>
+
     <div class="row times "> 
-      <div class="col-4  d-flex justify-content-center">
-        <span>Sydney:</span> <iframe src="https://free.timeanddate.com/clock/i7qq3bvq/n240/fn6/fs20/fcfff/tct/pct/ftb/ta1" frameborder="0" width="197" height="25" allowtransparency="true"></iframe>
+      <div class="col-4 justify-content-center city">
+          <h4>Sydney</h4>
+          <div class="row">
+          <iframe src="https://free.timeanddate.com/clock/i7qq3bvq/n240/fn6/fs20/fcfff/tct/pct/ftb/ta1" frameborder="0" width="197" height="25" allowtransparency="true"></iframe>
+          <span id="tempSYD"></span>
+          <img id="weatherIconSYD"> 
+          </div>
       </div>
-      <div class="col-4 d-flex justify-content-center">
-        NYC: <iframe src="https://free.timeanddate.com/clock/i7qqc3az/n179/fn6/fs20/fcfff/tct/pct/ftb/ta1" frameborder="0" width="183" height="25" allowtransparency="true"></iframe>
+      <div class="col-4 justify-content-cente city">
+        <h4>NYC</h4>
+        <div class="row"> 
+          <iframe src="https://free.timeanddate.com/clock/i7qqc3az/n179/fn6/fs20/fcfff/tct/pct/ftb/ta1" frameborder="0" width="183" height="25" allowtransparency="true"></iframe>
+          <span id="tempNYC"></span>
+          <img id="weatherIconNYC"> 
+        </div>
       </div>
-      <div class="col-4 d-flex justify-content-center">
-        London: <iframe src="https://free.timeanddate.com/clock/i7qqc676/n136/fn6/fs20/fcfff/tct/pct/ftb/ta1" frameborder="0" width="183" height="25" allowtransparency="true"></iframe>
+      <div class="col-4 justify-content-center city">
+        <h4>London</h4>
+        <div class="row"> 
+        <iframe src="https://free.timeanddate.com/clock/i7qqc676/n136/fn6/fs20/fcfff/tct/pct/ftb/ta1" frameborder="0" width="183" height="25" allowtransparency="true"></iframe>
+        <span id="tempLon"></span>
+        <img id="weatherIconLon"> 
+        </div>
       </div>
     </div>
  
@@ -117,11 +138,6 @@
           <img src="https://chess.com/bundles/web/favicons/apple-touch-icon.f72d3fd3.png" height="50px">
         </a>
       </div>     
-
-
-      
-
- 
   </div>
    
   
