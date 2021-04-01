@@ -4,6 +4,7 @@ var options = { weekday: 'long' , year: 'numeric', month: 'long', day: 'numeric'
 
 
 window.onload = function() {
+document.getElementById('googleSearch').focus();
     getWeatherSyd();
     getWeatherNYC();
     getWeatherLon();
