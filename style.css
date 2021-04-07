@@ -1,11 +1,15 @@
 .container { width: 85% i !important;}
 
 body {
+  /* background-image: url('images/trevor.jpeg'); */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;  */
   height: 100vh;
   width: 100vw;
   padding-top: 10px;
-  background:linear-gradient(to right, #75264f, #8e295d,#B51E6D) !important;
-  /* background:linear-gradient(to left, #014893, #003870,#002D59) !important; */
+  background:linear-gradient(to left, #014893, #003870,#002D59) !important;
 }
 
 .row {
@@ -73,10 +77,3 @@ justify-content: center;
  .city img{
    width: 32px;
  }
-
- .rokt body {
-  height: 100vh;
-  width: 100vw;
-  padding-top: 10px;
-  background:linear-gradient(to left, #75264f, #8e295d,#B51E6D) !important;
-}
